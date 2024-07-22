@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone repository') {
             steps {
-                git 'https://github.com/santoshbd67/Terraform-Jenkins.git'  // Replace with your repo URL
+                git branch: 'main', url: 'https://github.com/santoshbd67/Terraform-Jenkins.git'  // Replace with your repo URL
             }
         }
         stage('Initialize Terraform') {
