@@ -23,7 +23,7 @@ resource "aws_internet_gateway" "my_igw" {
 
 # Create NAT Gateway EIP
 resource "aws_eip" "nat_eip" {
-  vpc = true
+  domain   = "vpc"
 }
 
 # Create NAT Gateway
